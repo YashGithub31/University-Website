@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>University</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+  </head>
+
+  <body>
+
+    <!-- Header Section -->
+
+    <section class="sub-header">
+      <nav>
+        <a href="index.html"><img src="images/logo.png" /></a>
+        <div class="nav-links" id="navLinks">
+          <i class="fa-solid fa-xmark" onclick="hideMenu()"></i>
+          <ul>
+            <li><a href="index.html">HOME</a></li>
+            <li><a href="about.html">ABOUT</a></li>
+            <li><a href="course.html">COURSE</a></li>
+            <li><a href="blog.html">BLOG</a></li>
+            <li><a href="contact.html">CONTACT</a></li>
+          </ul>
+        </div>
+        <i class="fa-solid fa-bars" onclick="showMenu()"></i>
+     </nav>
+
+      <h1>Our Certificate & Online Programs For 2024 </h1>
+    </section>
+
+    <!-- Blog Page Content -->
+
+    <section class="blog-content">
+      <div class="row">
+        <div class="blog-left">
+            <img src="images/certificate.jpg">
+            <h2>Our Certificate & Online Programs For 2024</h2>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestiae numquam incidunt neque similique, ducimus dicta distinctio rem nemo quis exercitationem maxime veritatis ut harum, iusto possimus fugit ab maiores perspiciatis itaque? Eius, quis, quae minima deleniti animi aperiam expedita, beatae officiis magni tempore facilis mollitia.</p>
+            <br>
+            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Deleniti, blanditiis! Eligendi nesciunt asperiores dolore laudantium ratione quis fugit sunt unde? Voluptatibus odio soluta impedit obcaecati suscipit quae, necessitatibus iure, nam tenetur, corporis placeat cupiditate magnam accusantium modi consequuntur at quidem accusamus quibusdam atque quaerat pariatur excepturi perferendis sit. Rem voluptatibus pariatur, fuga aperiam aliquam, rerum ipsum illo repellendus quibusdam possimus perspiciatis? Exercitationem consequuntur minus, saepe nam commodi eveniet ut sint dolor modi eum asperiores, quasi perferendis quae tenetur quam, laborum natus! Tempora blanditiis labore animi fuga, dolorum quis similique perspiciatis!</p>
+            <br>
+            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Commodi nihil autem, minima quas porro recusandae impedit doloremque beatae perferendis, excepturi provident animi adipisci harum, architecto libero vitae itaque tempore necessitatibus molestias placeat officiis sit assumenda? Eos, ducimus culpa. Assumenda, tenetur? Nisi delectus assumenda obcaecati quidem iste. Ratione temporibus necessitatibus laboriosam provident consequatur tempora ullam, est nostrum cumque, similique perferendis! Maxime dolores harum quis illum commodi? Quibusdam voluptatibus vel natus consequuntur ipsam, error ducimus reiciendis, quia ut voluptatum aut saepe distinctio dignissimos veritatis provident, minus praesentium recusandae delectus mollitia culpa doloremque!</p>
+            <br>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Velit rerum voluptate accusantium iure necessitatibus in iusto reprehenderit vero praesentium cum, consequatur consequuntur nihil aliquam autem nostrum architecto? Asperiores, quidem? Totam voluptates possimus provident alias a sequi atque animi debitis similique pariatur obcaecati adipisci vitae, blanditiis distinctio? Deserunt optio reprehenderit maiores?</p>
+
+            <div class="comment-box">
+              <h2>Leave a comment</h2>
+
+              <form class="comment-form">
+                <input type="text" placeholder="Enter Name">
+                <input type="text" placeholder="Enter Email">
+                <textarea rows="5" placeholder="Your Comment"></textarea>
+                <button type="submit" class="hero-btn red-btn">POST COMMENT</button>
+              </form>
+            </div>
+        </div>
+
+        <div class="blog-right">
+          <h3>Post Categories</h3>
+          <div>
+            <span>Business Analytics</span>
+            <span>21</span>
+          </div>
+
+          <div>
+            <span>Data Science</span>
+            <span>28</span>
+          </div>
+
+          <div>
+            <span>Computer Science</span>
+            <span>30</span>
+          </div>
+
+          <div>
+            <span>Machine Learning</span>
+            <span>20</span>
+          </div>
+
+          <div>
+            <span>Auto CAD</span>
+            <span>25</span>
+          </div>
+
+          <div>
+            <span>Artificial Intelligence</span>
+            <span>10</span>
+          </div>
+
+          <div>
+            <span>Data Analytics</span>
+            <span>18</span>
+          </div>
+            
+        </div>
+    </div>
+    </section>
+
+
+    <!-- Footer section -->
+
+    <section class="footer">
+      <h4>About Us</h4>
+      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nam, velit asperiores nesciunt sed incidunt eum <br> accusantium minima soluta possimus quo, aperiam fuga culpa eius!</p>
+      <div class="icons">
+        <i class="fa-brands fa-facebook-f"></i>
+        <i class="fa-brands fa-instagram"></i>
+        <i class="fa-brands fa-twitter"></i>
+        <i class="fa-brands fa-linkedin"></i>
+      </div>
+      <p>Made With <i class="fa-regular fa-heart"></i> By Easy Tutorials </p>
+
+    </section>
+
+
+    <!-- Javascript for toggle menu -->
+    
+    <script>
+      var navLinks = document.getElementById("navLinks");
+
+      function showMenu(){
+        navLinks.style.right = "0";
+      }
+
+      function hideMenu(){
+        navLinks.style.right = "-200px"
+      }
+    </script>
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/js/all.min.js">
+    
+  </body>
+</html>
